@@ -1,0 +1,15 @@
+<app-carform (carvar)="oncarclick($event)"></app-carform>
+<div class="table-responsive">
+  <table>
+    <thead>
+      <th> Car Brand </th>
+      <th> Car Model </th>
+      <th> Car Engine Type </th>
+    </thead>
+    <tr *ngFor="let data of carArray">
+      <td>{{data.carBrand}}</td>
+      <td>{{data.carModel}}</td>
+      <td>{{data.carNumber}}</td>
+    </tr>
+  </table>
+</div>
